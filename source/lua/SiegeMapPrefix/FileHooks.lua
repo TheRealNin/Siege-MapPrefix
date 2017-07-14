@@ -1,1 +1,1 @@
-ModLoader.SetupFileHook("lua/Server.lua", "lua/Server.lua", "post")
+ModLoader.SetupFileHook("lua/Server.lua", "lua/SiegeMapPrefix/Server.lua", "post")

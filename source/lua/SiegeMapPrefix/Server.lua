@@ -19,15 +19,15 @@ do
   local function string_starts(String,Start)
      return string.sub(String,1,string.len(Start))==Start
   end
-
   local oldServerStartWorld = Server.StartWorld
   Server.StartWorld = function( mods, mapName )
     if (it % 2 == 0) then
-      kMapUsedPrefix = ""
       it = it + 1
       for prefix, publish_id in pairs(mmp_table) do
         if string_starts( mapName and mapName or "", prefix ) then
           mapName = "sg_" .. string.sub( mapName, string.len( prefix ) + 1 )
+          kMapUsedPrefix = ""
+          Log("Mod Map prefix is replacing load with: " .. mapName)
           mods[#mods + 1] = publish_id()
         end
       end
