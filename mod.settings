@@ -1,0 +1,12 @@
+name        = "Siege++ Mod Map Prefix"
+source_dir  = "source/"
+output_dir  = "output/"
+description = [=[Siege++ Mod Map Prefix is based on the excellent Mods Map Prefix by Katzenfleisch: http://steamcommunity.com/sharedfiles/filedetails/?id=816372055
+
+Gotta run this on the server, yo.
+
+ModID: 3b8ed499]=]
+image       = "preview.jpg"
+tag_modtype = "Tool"
+tag_support = "Must be run on Server"
+publish_id = "3b8ed499"
